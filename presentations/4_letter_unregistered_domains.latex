@@ -1,0 +1,215 @@
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{wolverine}
+
+% Encoding and Packages
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{hyperref} % For clickable links
+
+% Color Palette
+\definecolor{primary}{RGB}{0, 153, 204} % Bright Cyan
+\definecolor{secondary}{RGB}{0, 150, 159} % Aqua
+\definecolor{background}{RGB}{20, 20, 20} % Dark background
+\definecolor{textcolor}{RGB}{240, 240, 240} % Light gray text
+\definecolor{itemcolor}{RGB}{255, 255, 0} % Yellow for items
+\definecolor{alertcolor}{RGB}{255, 69, 0} % OrangeRed for alerts
+\definecolor{highlight}{RGB}{0, 153, 51} % LightGreen for highlights
+
+% Set colors
+\setbeamercolor{background canvas}{bg=background}
+\setbeamercolor{normal text}{fg=textcolor}
+\setbeamercolor{item}{fg=itemcolor}
+\setbeamercolor{item projected}{bg=primary, fg=textcolor}
+\setbeamercolor{alerted text}{fg=alertcolor}
+\setbeamercolor{structure}{fg=secondary}
+
+% Fonts
+\usefonttheme{professionalfonts} % Use professional fonts
+\setbeamerfont{title}{size=\huge, series=\bfseries, color=primary}
+\setbeamerfont{item}{size=\large, color=primary}
+\setbeamerfont{normal text}{color=textcolor}
+\setbeamerfont{alerted text}{series=\bfseries}
+
+% Custom Commands for Consistency
+\newcommand{\highlighttext}[1]{\textcolor{highlight}{#1}}
+\newcommand{\alerttext}[1]{\alert{#1}}
+
+\title{\highlighttext{Unregistered 4-Letter .com Domains Insights}}
+\author{\highlighttext{Florin Badita}}
+\institute{\highlighttext{Scrape the World}}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+%\begin{frame}{Overview}
+%    \tableofcontents
+%\end{frame}
+
+\section{Introduction}
+
+\begin{frame}{\structure{Project Background}}
+    \begin{itemize}
+        \item Scraped \alerttext{1.5 million} 4-letter .com domains availability.
+        \item Identified \alerttext{770,795 unregistered} domains.
+        \item Extracted data on \highlighttext{character occurrences} and \highlighttext{patterns}.
+    \end{itemize}
+\end{frame}
+
+\section{Key Findings}
+
+\begin{frame}{1. \alert{Digits Dominate Unregistered Domains}}
+    \begin{itemize}
+        \item Digits '\textbf{0}' to '\textbf{9}' are among the \alerttext{top 10 most common characters}.
+        \item '\textbf{0}' is the \alerttext{most frequent}, appearing in \alerttext{4.21\%} of unregistered domains.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{2. \alert{Abundance of Less Common Letters}}
+    \begin{itemize}
+        \item Letters like '\textbf{q}' and '\textbf{z}' appear frequently due to \highlighttext{lower desirability}.
+        \item '\textbf{q}' in \alerttext{88,355 domains}; '\textbf{z}' in \alerttext{86,459 domains}.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{3. \alert{Scarcity of Vowels}}
+    \begin{itemize}
+        \item The most frequently found vowels are:
+        \begin{itemize}
+            \item '\textbf{a}' is found in \alerttext{64,546 unregistered domains}.
+            \item '\textbf{e}' is found in \alerttext{73,000 unregistered domains}.
+        \end{itemize}
+        \item In contrast, the less common vowels are:
+        \begin{itemize}
+            \item '\textbf{i}' appears in \alerttext{79,229 unregistered domains}.
+            \item '\textbf{o}' appears in \alerttext{84,853 unregistered domains}.
+            \item '\textbf{u}' appears in \alerttext{81,913 unregistered domains}.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{4. \alert{Repeated Characters in Unregistered Domains}}
+    \begin{itemize}
+        \item \textbf{\alert{Triple Repeats:}}
+        \begin{itemize}
+            \item \alerttext{No unregistered domains} with triple repeated characters.
+            \item Highlights their \highlighttext{popularity} and \highlighttext{high registration rate}.
+        \end{itemize}
+        \item \textbf{\alert{Double Repeats:}}
+        \begin{itemize}
+            \item Unregistered domains with \alerttext{double repeats} do exist.
+            \item '\textbf{V}' leads with \alerttext{1,090 domains}, followed by '\textbf{L}' and '\textbf{R}'.
+            \item '\textbf{C}' is the most used, with only \alerttext{386 domains left}.
+            \item Second most used character is '\textbf{S}', with \alerttext{523 domains left}.
+            \item Third is '\textbf{A}', with \alerttext{536 domains left}.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{5. \alert{Increasing Sequences Are Rare}}
+    \begin{itemize}
+        \item Few unregistered domains still have \highlighttext{increasing character sequences} (e.g., '\textbf{abc}', '\textbf{bcd}').
+        \item '\textbf{h}' and '\textbf{o}' start the most sequences with \alerttext{16 domains} each.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{6. \alert{'SCAM'} \highlight{The Four Least Common Letters}}
+    \begin{itemize}
+        \item '\textbf{S}' appears in just \alerttext{2.04\%} of unregistered domains.
+        \item '\textbf{C}' appears in \alerttext{2.08\%} of unregistered domains.
+        \item '\textbf{A}' appears in \alerttext{2.09\%} of unregistered domains.
+        \item '\textbf{M}' appears in \alerttext{2.16\%} of unregistered domains.
+        \item \textbf{\highlight{Fun Fact}}: These four least common letters spell "\textbf{SCAM}".
+        \item Their \highlighttext{low occurrence} in unregistered domains makes them the \alerttext{most registered letters} in domain names.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{7. \alert{High Frequency Letters in Unregistered Domains}}
+    \begin{table}[ht]
+        \centering
+        \begin{tabular}{l c c}
+            \textbf{Letter} & \textbf{Frequency (\%)} & \textbf{Domain Count} \\
+            \hline
+            \textbf{F} & 2.50 & 77,131 \\
+            \textbf{W} & 2.52 & 77,703 \\
+            \textbf{I} & 2.57 & 79,229 \\
+            \textbf{U} & 2.66 & 81,913 \\
+            \textbf{J} & 2.70 & 83,215 \\
+            \textbf{L} & 2.70 & 83,164 \\
+            \textbf{V} & 2.72 & 83,786 \\
+            \textbf{O} & 2.75 & 84,853 \\
+            \textbf{Z} & 2.80 & 86,459 \\
+            \textbf{Q} & 2.87 & 88,355 \\
+        \end{tabular}
+        \caption{\alert{High Frequency Letters in Unregistered Domains}}
+    \end{table}
+    \vspace{1em}
+
+\end{frame}
+
+\begin{frame}{8. \alert{'0' Is the Most Common Character}}
+    \begin{itemize}
+        \item '\textbf{0}' is the \alert{most common character}, present in \alerttext{129,815 domains}.
+    \end{itemize}
+    \vspace{1em} % Adds a small vertical space between the list and the table
+    \begin{table}[h!]
+        \centering
+        \begin{tabular}{l c}
+            \toprule
+            \textbf{Character} & \textbf{Percentage Occurrence} \\
+            \midrule
+            \alert{0} & \alerttext{4.21\%} \\
+            \alert{9} & \alerttext{3.69\%} \\
+            \alert{6} & \alerttext{3.58\%} \\
+            \alert{7} & \alerttext{3.54\%} \\
+            \alert{4} & \alerttext{3.44\%} \\
+            \alert{5} & \alerttext{3.40\%} \\
+            \alert{1} & \alerttext{3.28\%} \\
+            \alert{8} & \alerttext{3.25\%} \\
+            \alert{3} & \alerttext{3.15\%} \\
+            \alert{2} & \alerttext{2.91\%} \\
+            \bottomrule
+        \end{tabular}
+        \caption{\alert{Top 10 Characters by Percentage Occurrence}}
+    \end{table}
+    \vspace{0.5em} % Optional: Adds a bit more space before the concluding remark
+\end{frame}
+
+\section{Conclusion}
+
+\begin{frame}{\structure{Insights Summary}}
+    \begin{itemize}
+        \item \alert{High demand} for domains with vowels and triple repeats.
+        \item \alert{Digits and less common letters} are more available.
+        \item Patterns like \highlighttext{increasing sequences} are rare and popular.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{\structure{Opportunities}}
+    \begin{itemize}
+        \item \highlighttext{Consider using digits and less common letters} creatively.
+        \item \highlighttext{Explore double repeats} and unique patterns.
+        \item \alert{High availability} in certain character combinations.
+    \end{itemize}
+\end{frame}
+
+\section{Contact Information}
+
+\begin{frame}{\structure{Get in Touch}}
+    \begin{center}
+        \textbf{\highlighttext{Florin Badita}} \\
+        \vspace{0.5cm}
+        Email: \texttt{\href{mailto:your.email@example.com}{your.email@example.com}} \\
+        LinkedIn: \href{https://linkedin.com/in/yourprofile}{linkedin.com/in/yourprofile} \\
+        Website: \href{https://www.yourwebsite.com}{www.yourwebsite.com}
+    \end{center}
+\end{frame}
+
+\end{document}
