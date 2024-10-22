@@ -1,0 +1,12 @@
+% beamerinnerthemeMyTheme.sty
+\ProvidesPackage{beamerinnerthemeMyTheme}
+
+\usepackage{beamerthemesplit} % Base on an existing inner theme
+
+% Customize itemize symbols
+\setbeamertemplate{itemize item}{\color{itemcolor}$\blacktriangleright$}
+\setbeamertemplate{itemize subitem}{\color{itemcolor}$\blacktriangleleft$}
+\setbeamertemplate{itemize subsubitem}{\color{itemcolor}$\bullet$}
+
+% Customize block titles
+\setbeamertemplate{blocks}[default]

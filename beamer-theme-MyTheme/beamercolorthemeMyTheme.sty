@@ -1,0 +1,33 @@
+% beamercolorthemeMyTheme.sty
+\ProvidesPackage{beamercolorthemeMyTheme}
+
+\usepackage{xcolor}
+
+% Define Custom Colors
+\definecolor{primary}{RGB}{0, 153, 204}      % Bright Cyan
+\definecolor{secondary}{RGB}{0, 255, 255}    % Aqua
+\definecolor{background}{RGB}{20, 20, 20}    % Dark background
+\definecolor{textcolor}{RGB}{240, 240, 240}  % Light gray text
+\definecolor{itemcolor}{RGB}{255, 255, 0}    % Yellow for items
+\definecolor{alertcolor}{RGB}{255, 69, 0}    % OrangeRed for alerts
+\definecolor{highlight}{RGB}{144, 238, 144}  % LightGreen for highlights
+
+% Set Beamer Colors
+\setbeamercolor{background canvas}{bg=background}
+\setbeamercolor{normal text}{fg=textcolor}
+\setbeamercolor{item}{fg=itemcolor}
+\setbeamercolor{item projected}{bg=primary, fg=textcolor}
+\setbeamercolor{alerted text}{fg=alertcolor}
+\setbeamercolor{structure}{fg=secondary}
+
+% Additional Color Settings
+\setbeamercolor{section in toc}{fg=secondary}
+\setbeamercolor{frametitle}{fg=primary}
+\setbeamercolor{title}{fg=primary}
+\setbeamercolor{author}{fg=primary}
+\setbeamercolor{institute}{fg=primary}
+\setbeamercolor{date}{fg=primary}
+\setbeamercolor{block title}{bg=primary!80, fg=white}
+\setbeamercolor{block body}{bg=background, fg=textcolor}
+\setbeamercolor{block alerted title}{bg=alertcolor, fg=white}
+\setbeamercolor{block alerted body}{bg=background, fg=textcolor}

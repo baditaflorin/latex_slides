@@ -1,0 +1,11 @@
+% beamerthemeMyTheme.sty
+\ProvidesPackage{beamerthemeMyTheme}
+
+\usepackage{beamerthemesplit} % Base on an existing outer theme
+\usepackage{beamercolorthemeMyTheme}
+\usepackage{beamerinnerthemeMyTheme} % If created
+\usepackage{beamerouterthemeMyTheme} % If created
+
+% Custom Commands
+\newcommand{\highlighttext}[1]{\textcolor{highlight}{#1}}
+\newcommand{\alerttext}[1]{\alert{#1}}

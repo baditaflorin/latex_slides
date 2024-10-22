@@ -1,0 +1,24 @@
+% beamerouterthemeMyTheme.sty
+\ProvidesPackage{beamerouterthemeMyTheme}
+
+\usepackage{beamerthemesplit} % Base on an existing outer theme
+
+% Customize headline
+\setbeamertemplate{headline}{
+  \begin{beamercolorbox}[ht=2.5ex,dp=1.125ex]{section in head/foot}
+    \hfill\insertsectionnavigationhorizontal{\paperwidth}{}{}
+  \end{beamercolorbox}
+}
+
+% Customize footline
+\setbeamertemplate{footline}{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,left]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\hspace*{2ex}\insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,right]{date in head/foot}%
+    \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2ex}
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
