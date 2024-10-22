@@ -1,0 +1,113 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{xcolor}
+
+% Define custom colors for code elements
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+% Code styling for general use
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2
+}
+
+% Set specific language styles if necessary
+\lstdefinelanguage{Python}{
+    morekeywords={def, return, if, else, elif, import, from, as, print, for, in, range, while, break, continue, pass, lambda},
+    morecomment=[l]{\#},
+    morestring=[b]",
+    sensitive=true
+}
+
+\lstdefinelanguage{Go}{
+    morekeywords={package, import, func, return, var, const, if, else, for, range, go, struct, type, map, interface},
+    morecomment=[l]{//},
+    morestring=[b]",
+    sensitive=true
+}
+
+\lstdefinelanguage{bash}{
+    morekeywords={echo, cd, ls, rm, cp, mv, mkdir, rmdir, sudo, cat, chmod, chown, export, set, unset},
+    morecomment=[l]{\#},
+    morestring=[b]",
+    sensitive=true
+}
+
+% Apply custom style as default
+\lstset{style=mystyle}
+
+\begin{document}
+
+\begin{frame}[fragile]
+\frametitle{Python Example: Prime Numbers}
+\begin{lstlisting}[language=Python]
+# Python program to display all the prime numbers within an interval
+
+lower = 900
+upper = 1000
+
+print("Prime numbers between", lower, "and", upper, "are:")
+
+for num in range(lower, upper + 1):
+   # all prime numbers are greater than 1
+   if num > 1:
+       for i in range(2, num):
+           if (num % i) == 0:
+               break
+       else:
+           print(num)
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Go Example: Basic Function}
+\begin{lstlisting}[language=Go]
+package main
+import "fmt"
+
+func main() {
+    fmt.Println("Hello, Go!")
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Bash Script Example: Simple Backup}
+\begin{lstlisting}[language=bash]
+#!/bin/bash
+# Simple backup script
+
+src="/home/user/data"
+dest="/backup"
+
+if [ -d "$src" ]; then
+    cp -r "$src" "$dest"
+    echo "Backup complete."
+else
+    echo "Source directory does not exist."
+fi
+\end{lstlisting}
+\end{frame}
+
+\end{document}
